@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vansh Jhariya | Frontend Web Developer & Designer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Meer Mohsin Style Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+      <a
+        href="#hero"
+        class="brand-wordmark"
+        aria-label="Vansh Jhariya Portfolio"
+      >
+        <span class="first-name">Vansh</span>
+        <span class="last-name">Jhariya</span>
+        <span class="signature-dot"></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="nav-cta"><span>Let's Talk</span></a>
+      </nav>
+
+      <!-- Mobile Menu Toggle with ARIA Attributes -->
+      <button
+        class="mobile-toggle"
+        id="mobileToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#work" class="mobile-link">Work</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main>
+      <!-- SECTION 1: HERO SECTION -->
+      <section class="hero" id="hero">
+        <!-- Ambient Video Background Stack -->
+        <div class="hero-bg default-bg active">
+          <video
+            class="hero-video-element"
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            poster="/visuals/posters/soft-blue.jpg"
+          >
+            <source src="/visuals/soft-blue-gradient.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-bg bg-about">
+          <video
+            class="hero-video-element"
+            loop
+            muted
+            playsinline
+            preload="none"
+            poster="/visuals/posters/dark-ocean.jpg"
+          >
+            <source src="/visuals/dark-ocean-waves.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-bg bg-services">
+          <video
+            class="hero-video-element"
+            loop
+            muted
+            playsinline
+            preload="none"
+            poster="/visuals/posters/green-particle.jpg"
+          >
+            <source src="/visuals/green-particle-grid.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-bg bg-aura">
+          <video
+            class="hero-video-element"
+            loop
+            muted
+            playsinline
+            preload="none"
+            poster="/visuals/posters/glowing-wave.jpg"
+          >
+            <source src="/visuals/glowing-particle-wave.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <!-- Left Side: Interactive Ticker List -->
+        <div class="hero-interactive-list" data-reveal="left">
+          <div class="list-label">Hover to preview section themes:</div>
+          <ul class="interactive-ticker">
+            <li class="ticker-item">
+              <a href="#about" data-bg="bg-about">
+                <span class="num">01</span>
+                <span class="text">ABOUT ME</span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+            <li class="ticker-item">
+              <a href="#services" data-bg="bg-services">
+                <span class="num">02</span>
+                <span class="text">SERVICES</span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+            <li class="ticker-item">
+              <a href="#work" data-bg="bg-aura">
+                <span class="num">03</span>
+                <span class="text">AURA INTERIORS</span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Main Dynamic Text -->
+        <div class="hero-content" data-reveal="up" data-reveal-stagger>
+          <span class="hero-eyebrow"
+            >Frontend Web Developer & Web Designer</span
+          >
+          <h1 class="hero-title" id="heroTitle">
+            Crafting web experiences that help businesses grow.
+          </h1>
+          <p class="hero-subtitle" id="heroSubtitle">
+            I'm Vansh Jhariya—a developer building clean, responsive, and
+            reliable websites focused on performance and user experience.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 2: ABOUT ME -->
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <span class="badge">01 // ABOUT ME</span>
+          <h2 class="section-title">ENGINEERING DIGITAL EXPERIENCES</h2>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+          <div class="bento-card portrait-card magnetic-card">
+            <div class="portrait-wrapper">
+              <img
+                src="/images/profile.png"
+                alt="Profile Headshot"
+                class="portrait-img"
+              />
+              <div class="portrait-overlay"></div>
+            </div>
+            <div class="portrait-footer">
+              <span class="status-dot"></span>
+              <span class="status-text">Available for Projects</span>
+            </div>
+          </div>
+
+          <div class="bento-card narrative-card">
+            <h3 class="narrative-heading">
+              I build web applications where design engineering meets clean
+              architecture.
+            </h3>
+            <p class="narrative-body scroll-reveal">
+              I don't just write code—I design interactive web experiences
+              tailored for scale and visual polish. Whether it's crafting
+              silky-smooth CSS animations or optimizing core performance, my
+              focus is delivering software that feels fast, intuitive, and
+              memorable.
+            </p>
+          </div>
+
+          <div class="bento-card quote-card">
+            <div class="quote-icon">“</div>
+            <p class="quote-text">
+              Simplicity is about subtracting the obvious and adding the
+              meaningful.
+            </p>
+          </div>
+
+          <div class="bento-card tech-card">
+            <span class="card-label">TECH STACK</span>
+            <div class="tech-tags">
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">CSS3 / GSAP</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">GitHub</span>
+            </div>
+          </div>
+
+          <div class="bento-card focus-card">
+            <span class="card-label">CURRENT FOCUS</span>
+            <p class="focus-text">
+              Exploring dynamic cursor interfaces, WebGL transitions, and
+              micro-interactions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SERVICES & CAPABILITIES -->
+      <section class="section services-section" id="services">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Services</h2>
+            <p class="section-tagline">Clear, reliable web solutions.</p>
+          </div>
+
+          <div class="services-grid" data-reveal-stagger>
+            <div class="service-card magnetic-card" data-reveal="up">
+              <div class="service-media-bg">
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  class="card-video"
+                  poster="/visuals/posters/green-particle.jpg"
+                >
+                  <source
+                    src="/visuals/green-particle-grid.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="service-content">
+                <div class="service-num">01</div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-desc">
+                  Building modern, structured websites using clean HTML, CSS,
+                  and JavaScript. Focused on cross-browser compatibility, fast
+                  loading times, and clean code.
+                </p>
+                <ul class="service-tags">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript (ES6+)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="service-card magnetic-card" data-reveal="up">
+              <div class="service-media-bg">
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  class="card-video color-shift"
+                  poster="/visuals/posters/green-particle.jpg"
+                >
+                  <source
+                    src="/visuals/green-particle-grid.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="service-content">
+                <div class="service-num">02</div>
+                <h3 class="service-title">Responsive Design</h3>
+                <p class="service-desc">
+                  Ensuring every website functions seamlessly across all device
+                  sizes—from mobile phones and tablets to wide desktop screens.
+                </p>
+                <ul class="service-tags">
+                  <li>Mobile-First</li>
+                  <li>Flexbox / Grid</li>
+                  <li>Fluid Typography</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="service-card magnetic-card" data-reveal="up">
+              <div class="service-media-bg">
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  class="card-video particle-wave"
+                  poster="/visuals/posters/glowing-wave.jpg"
+                >
+                  <source
+                    src="/visuals/glowing-particle-wave.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="service-content">
+                <div class="service-num">03</div>
+                <h3 class="service-title">Landing Pages</h3>
+                <p class="service-desc">
+                  Creating clear, single-page website layouts designed to
+                  present information effectively and encourage user engagement.
+                </p>
+                <ul class="service-tags">
+                  <li>High-Impact Hero</li>
+                  <li>Clear CTAs</li>
+                  <li>UX Layouts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: SELECTED WORK -->
+      <section class="section work-section" id="work">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-tagline">
+              Real-world concept builds and frontend applications.
+            </p>
+          </div>
+
+          <div class="case-study-card magnetic-card" data-reveal="up">
+            <video
+              class="case-study-bg-video"
+              loop
+              muted
+              playsinline
+              preload="none"
+              poster="/visuals/posters/dark-ocean.jpg"
+            >
+              <source src="/visuals/dark-ocean-waves.mp4" type="video/mp4" />
+            </video>
+            <div class="case-study-overlay"></div>
+
+            <div class="case-media" data-parallax="-0.05">
+              <div class="case-image-wrap">
+                <div class="case-preview-placeholder">
+                  <div class="browser-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="url-bar"
+                      >https://aura-interiors-snowy-three.vercel.app/</span
+                    >
+                  </div>
+                  <div class="case-preview-body">
+                    <video
+                      class="preview-inner-video"
+                      loop
+                      muted
+                      playsinline
+                      preload="none"
+                      poster="/visuals/posters/amber-ink.jpg"
+                    >
+                      <source
+                        src="/visuals/golden-amber-ink.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                    <div class="preview-inner-content">
+                      <div class="case-badge">PROJECT 03</div>
+                      <h3>Aura Interiors</h3>
+                      <p>Interior Design Website Concept</p>
+                      <a
+                        href="https://aura-interiors-snowy-three.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        class="preview-btn"
+                      >
+                        Launch Live Preview ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-info" data-reveal="left" data-reveal-stagger>
+              <div class="case-tag">Conceptual Client Build</div>
+              <h3 class="case-title">Aura Interiors</h3>
+              <p class="case-description">
+                Aura Interiors is a modern interior design website concept built
+                to practice real-world web development workflows. Designed from
+                a detailed project brief, this website focuses on a clean
+                layout, clear typography, and subtle user interactions.
+              </p>
+
+              <div class="case-features">
+                <h4>Key Features Built:</h4>
+                <ul>
+                  <li>
+                    <strong>Smooth Scrolling & Navigation:</strong> Clean page
+                    transitions for an easy browsing experience.
+                  </li>
+                  <li>
+                    <strong>Interactive Elements:</strong> Subtle button hover
+                    effects and interactive states.
+                  </li>
+                  <li>
+                    <strong>Thoughtful Layout & Color Choice:</strong> A
+                    balanced visual layout designed to keep focus on visual
+                    content.
+                  </li>
+                  <li>
+                    <strong>Clear Calls-to-Action:</strong> Structured sections
+                    to guide visitors toward contacting the business.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="case-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Role</span>
+                  <span class="meta-val"
+                    >Frontend Development & Layout Design</span
+                  >
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Technologies</span>
+                  <span class="meta-val">HTML5, CSS3, JavaScript</span>
+                </div>
+              </div>
+
+              <a
+                href="https://aura-interiors-snowy-three.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                class="case-link-btn"
+              >
+                Visit Live Website ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: CONTACT & FOOTER -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div
+            class="contact-box magnetic-card"
+            data-reveal="up"
+            data-reveal-stagger
+          >
+            <span class="section-number">04</span>
+            <h2 class="contact-title">Let’s build something together.</h2>
+            <p class="contact-subtext">
+              Whether you need a new website, a custom landing page, or a
+              complete redesign, feel free to reach out.
+            </p>
+
+            <a href="mailto:vanshjhariya8@gmail.com" class="email-cta">
+              vanshjhariya8@gmail.com ↗
+            </a>
+
+            <div class="contact-footer">
+              <div class="footer-col">
+                <span class="footer-label">Location</span>
+                <p>Jabalpur, Madhya Pradesh, India</p>
+              </div>
+              <div class="footer-col">
+                <span class="footer-label">Social Connections</span>
+                <div class="footer-links">
+                  <a
+                    href="https://github.com/VanshJhariya"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/vansh-jhariya-953700340"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn ↗</a
+                  >
+                  <a
+                    href="https://www.instagram.com/__.vanshh20/"
+                    target="_blank"
+                    rel="noopener"
+                    >Instagram ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright-bar" data-reveal="up">
+            <p>© <span id="year"></span> Vansh Jhariya. All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main JavaScript Module -->
+    <script src="/js/script.js" defer></script>
+  </body>
+</html>
